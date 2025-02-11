@@ -7,7 +7,7 @@ const ToDoApp = () => {
     const [newTask, setNewTask] = useState('');
 
     const addTask = (taskText) => {
-        if (tastText.trim() !== '') {
+        if (taskText.trim() !== '') {
             setTasks([...tasks, {
                 id: Date.now(),
                 text: taskText,
@@ -43,5 +43,6 @@ const ToDoApp = () => {
         </div>
     )
 }
+
 
 export default ToDoApp
